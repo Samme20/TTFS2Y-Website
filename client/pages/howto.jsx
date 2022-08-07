@@ -6,7 +6,7 @@ export default function howto() {
   return (
     <div className="container">
       <Head>
-        <title>PSYCE SMP | Last step</title>
+        <title>Modded PSYCE SMP | Last step</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -6,7 +6,7 @@ export default function rules() {
   return (
     <div className="container">
       <Head>
-        <title>PSYCE SMP | Rules</title>
+        <title>Modded PSYCE SMP | Rules</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -22,10 +22,10 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <Link href="/rules">
+          <Link href="/">
             <a className="card">
-              <h3>Get Started! &rarr;</h3>
-              <p>View Rules and a guide.</p>
+              <h3>Soon &rarr;</h3>
+              <p>Server released 12/08-22</p>
             </a>
           </Link>
         </div>
