@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Modded PSYCE SMP | Home</title>
+        <title>TTFS2Y | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -22,10 +22,10 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <Link href="/">
+          <Link href="/rules">
             <a className="card">
-              <h3>Soon &rarr;</h3>
-              <p>Server released 12/08-22</p>
+              <h3>Get Started! &rarr;</h3>
+              <p>View Rules and a guide.</p>
             </a>
           </Link>
         </div>
