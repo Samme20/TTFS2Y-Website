@@ -20,6 +20,23 @@ export default function howto() {
         <div className="list">
           <ul>
             <li>
+              <li>
+                <h2>Step (0) - Check out the official youtube channel</h2>
+                <p>
+                  We have a lot of tutorials and more to come on the YouTube
+                  channel. Check it out to learn more about joining, playing and
+                  etc.
+                </p>
+                <p>
+                  <a
+                    href="https://www.youtube.com/channel/UCWuLVCaE9YWpF6fYbRTfY6Q"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Link to YouTube Channel
+                  </a>
+                </p>
+              </li>
               <h2>Step 1 - Download the modpack</h2>
               <p>
                 1 - Download curseforge by clicking{" "}
