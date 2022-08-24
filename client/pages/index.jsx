@@ -9,6 +9,10 @@ export default function Home() {
         <title>TTFS2Y | Home</title>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="TTFS2Y Server" />
+        <meta
+          property="og:description"
+          content="A modded minecraft server based on the TTFS2Y Modpack."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://ttfs2y.sthlmpreclarus.se/" />
         <meta
