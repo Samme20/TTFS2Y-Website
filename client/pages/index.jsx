@@ -8,16 +8,42 @@ export default function Home() {
       <Head>
         <title>TTFS2Y | Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="A modded minecraft server based on the TTFS2Y Modpack."
+        />
+
+        <meta itemprop="name" content="TTFS2Y Server" />
+        <meta
+          itemprop="description"
+          content="A modded minecraft server based on the TTFS2Y Modpack."
+        />
+        <meta
+          itemprop="image"
+          content="http://cdn.discordapp.com/attachments/538464909055229972/1008002191681933394/TTFS2Y_banner.png"
+        />
+
+        <meta property="og:url" content="https://ttfs2y.sthlmpreclarus.se" />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="TTFS2Y Server" />
         <meta
           property="og:description"
           content="A modded minecraft server based on the TTFS2Y Modpack."
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ttfs2y.sthlmpreclarus.se/" />
         <meta
           property="og:image"
-          content="https://cdn.discordapp.com/attachments/538464909055229972/1008002191681933394/TTFS2Y_banner.png"
+          content="http://cdn.discordapp.com/attachments/538464909055229972/1008002191681933394/TTFS2Y_banner.png"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TTFS2Y Server" />
+        <meta
+          name="twitter:description"
+          content="A modded minecraft server based on the TTFS2Y Modpack."
+        />
+        <meta
+          name="twitter:image"
+          content="http://cdn.discordapp.com/attachments/538464909055229972/1008002191681933394/TTFS2Y_banner.png"
         />
       </Head>
 
