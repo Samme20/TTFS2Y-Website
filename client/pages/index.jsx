@@ -13,7 +13,7 @@ export default function Home() {
         <meta property="og:url" content="https://ttfs2y.sthlmpreclarus.se/" />
         <meta
           property="og:image"
-          content="https://cdn.discordapp.com/attachments/538464909055229972/1003750985849647255/logoreal.png"
+          content="https://cdn.discordapp.com/attachments/538464909055229972/1008002191681933394/TTFS2Y_banner.png"
         />
       </Head>
 
