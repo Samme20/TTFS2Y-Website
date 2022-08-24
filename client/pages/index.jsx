@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,33 +10,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to{" "}
-          <a className="purple">
-            <i>TTFS2Y</i>
-          </a>
-        </h1>
-
-        <p className="description">
-          The official server for the modpack TTFS2Y.
-        </p>
-
-        <div className="grid">
-          <Link href="/rules">
-            <a className="card">
-              <h3>Get Started! &rarr;</h3>
-              <p>View Rules and a guide.</p>
-            </a>
-          </Link>
-        </div>
-      </main>
-
-      <footer>
-        <a>website by &#169;STHLM Preclarus</a>
-      </footer>
-
+      <body>
+        <main>
+          <video className="landing" autoPlay muted loop>
+            <source src="TTFS2Y_trailer_WEB.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </main>
+        <footer>
+          <a>website by &#169;STHLM Preclarus</a>
+        </footer>
+      </body>
       <style jsx>{`
+        body {
+          overflow: hidden;
+        }
+
         .container {
           min-height: 100vh;
           padding: 0 0.5rem;
@@ -43,6 +33,12 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .landing {
+          position: absolute;
+          width: 120vw;
+          height: 120vh;
         }
 
         main {
@@ -151,7 +147,6 @@ export default function Home() {
           }
         }
       `}</style>
-
       <style jsx global>{`
         html,
         body {
