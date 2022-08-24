@@ -8,6 +8,13 @@ export default function Home() {
       <Head>
         <title>TTFS2Y | Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="TTFS2Y Server" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://ttfs2y.sthlmpreclarus.se/" />
+        <meta
+          property="og:image"
+          content="https://cdn.discordapp.com/attachments/538464909055229972/1003750985849647255/logoreal.png"
+        />
       </Head>
 
       <body>
