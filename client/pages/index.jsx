@@ -77,6 +77,8 @@ export default function Home() {
 
         .container {
           min-height: 100vh;
+          width: fit-content;
+          height: fit-content;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -84,13 +86,14 @@ export default function Home() {
         }
 
         .landing {
-          width: 120vw;
-          height: 120vh;
+          width: 100%;
+          height: 100%;
         }
 
         .landing-mobile {
-          width: 100vw;
-          height: 100vh;
+          margin-left: -20%;
+          width: 140%;
+          height: 140%;
         }
 
         main {
