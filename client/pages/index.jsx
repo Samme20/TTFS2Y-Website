@@ -1,6 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 
 export default function Home() {
   return (
@@ -13,9 +19,9 @@ export default function Home() {
           content="A modded minecraft server based on the TTFS2Y Modpack."
         />
 
-        <meta itemprop="name" content="TTFS2Y Server" />
+        <meta itemProp="name" content="TTFS2Y Server" />
         <meta
-          itemprop="description"
+          itemProp="description"
           content="A modded minecraft server based on the TTFS2Y Modpack."
         />
         <meta
@@ -49,23 +55,28 @@ export default function Home() {
 
       <body>
         <main>
-          <video className="landing" autoPlay muted loop>
-            <source src="TTFS2Y_trailer_WEB.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <BrowserView>
+            <video className="landing" autoPlay muted loop>
+              <source src="TTFS2Y_trailer_WEB.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </BrowserView>
+          <MobileView>
+            <video className="landing-mobile" autoPlay muted loop>
+              <source src="TTFS2Y_trailer_mobile.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </MobileView>
         </main>
-        <footer>
-          <a>website by &#169;STHLM Preclarus</a>
-        </footer>
       </body>
       <style jsx>{`
         body {
           overflow: hidden;
+          background-color: black;
         }
 
         .container {
           min-height: 100vh;
-          padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -73,13 +84,16 @@ export default function Home() {
         }
 
         .landing {
-          position: absolute;
           width: 120vw;
           height: 120vh;
         }
 
+        .landing-mobile {
+          width: 100vw;
+          height: 100vh;
+        }
+
         main {
-          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
