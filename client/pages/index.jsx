@@ -25,7 +25,7 @@ export default function Home() {
           content="A modded minecraft server based on the TTFS2Y Modpack."
         />
         <meta
-          itemprop="image"
+          itemProp="image"
           content="http://cdn.discordapp.com/attachments/538464909055229972/1008002191681933394/TTFS2Y_banner.png"
         />
 
@@ -62,7 +62,7 @@ export default function Home() {
             </video>
           </BrowserView>
           <MobileView>
-            <video className="landing-mobile" autoPlay muted loop>
+            <video className="landing-mobile" playsinline autoPlay muted loop>
               <source src="TTFS2Y_trailer_mobile.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
