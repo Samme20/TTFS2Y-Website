@@ -56,14 +56,24 @@ export default function Home() {
       <body>
         <main>
           <BrowserView>
+            <Link href="/rules" className="linkpos">
+              <div className="button border-gradient border-gradient-purple">
+                Play Now!
+              </div>
+            </Link>
             <video className="landing" autoPlay muted loop>
-              <source src="TTFS2Y_trailer_WEB.mp4" type="video/mp4" />
+              <source src="TTFS2Y_desktop.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </BrowserView>
           <MobileView>
-            <video className="landing-mobile" playsinline autoPlay muted loop>
-              <source src="TTFS2Y_trailer_mobile.mp4" type="video/mp4" />
+            <Link href="/rules" className="linkpos">
+              <div className="button-mobile border-gradient-mobile border-gradient-purple">
+                Play Now!
+              </div>
+            </Link>
+            <video className="landing-mobile" autoPlay muted loop>
+              <source src="TTFS2Y_mobile.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </MobileView>
@@ -73,6 +83,66 @@ export default function Home() {
         body {
           overflow: hidden;
           background-color: black;
+        }
+
+        .button {
+          z-index: 99999;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 14vw;
+          height: 11vh;
+          margin: auto;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          color: white;
+          font-size: 1.2vw;
+          font-weight: bolder;
+          opacity: 50%;
+          transition: opacity 0.6s ease;
+        }
+
+        .button:hover {
+          opacity: 100%;
+          cursor: pointer;
+        }
+
+        .button-mobile {
+          z-index: 99999;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50vw;
+          height: 6vh;
+          margin: auto;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          color: white;
+          font-size: 4vw;
+          font-weight: bolder;
+          transition: opacity 0.6s ease;
+        }
+
+        .border-gradient {
+          border: 10px solid;
+          border-image-slice: 1;
+          border-width: 0.5vw;
+        }
+
+        .border-gradient-mobile {
+          border: 10px solid;
+          border-image-slice: 1;
+          border-width: 1vw;
+        }
+
+        .border-gradient-purple {
+          border-image-source: linear-gradient(to right, #75da49, #fc9402);
         }
 
         .container {
@@ -206,6 +276,7 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
+          background-color: #0e002f;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;

@@ -55,6 +55,7 @@ export default function rules() {
 
       <style jsx>{`
         .container {
+          background-color: #04000d;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
@@ -73,6 +74,7 @@ export default function rules() {
         }
 
         .d-link {
+          color: white;
           margin-top: 2rem;
           padding: 1rem;
           font-size: 2rem;
@@ -99,7 +101,7 @@ export default function rules() {
         }
 
         code {
-          background: #fafafa;
+          background: #160f27;
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
@@ -121,11 +123,12 @@ export default function rules() {
         }
 
         .title a {
-          color: #0070f3;
+          color: white;
           text-decoration: none;
         }
 
         .title {
+          color: white;
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
@@ -133,6 +136,7 @@ export default function rules() {
 
         .title,
         .description {
+          color: white;
           text-align: center;
         }
 
@@ -170,6 +174,7 @@ export default function rules() {
       <style jsx global>{`
         html,
         body {
+          background-color: #070017;
           padding: 0;
           margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,

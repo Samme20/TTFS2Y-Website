@@ -1,8 +1,21 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
+import { useToast } from "@chakra-ui/react";
 
 export default function howto() {
+  const [reveal, setReveal] = useState(true);
+  const toast = useToast();
+  function copyAlert() {
+    navigator.clipboard.writeText("145.14.103.144");
+    toast({
+      title: "Copied to clipboard!",
+      status: "success",
+      duration: 1000,
+      isClosable: false,
+    });
+  }
   return (
     <div className="container">
       <Head>
@@ -12,7 +25,7 @@ export default function howto() {
 
       <main>
         <h1 className="title">How to join the server</h1>
-        <p>
+        <p className="undertitle">
           Let's goo! You're eligble to join, welcome! <br /> Follow the steps
           below to start playing.
         </p>
@@ -113,7 +126,17 @@ export default function howto() {
             <li>
               <h2>Step 3 - Join the MC server and get whitelist</h2>
               <p>
-                IP: <code>145.14.103.144</code>
+                IP:{" "}
+                <code onClick={copyAlert}>
+                  145.14.103.144{" "}
+                  <Image
+                    width="14px"
+                    height="14px"
+                    src="/copy.png"
+                    alt="copy icon"
+                    color="white"
+                  ></Image>
+                </code>
               </p>
               <p>Add the server and connect</p>
               <Image
@@ -148,12 +171,17 @@ export default function howto() {
 
       <style jsx>{`
         .container {
+          background-color: #04000d;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+        }
+
+        .undertitle {
+          color: white;
         }
 
         main {
@@ -166,6 +194,7 @@ export default function howto() {
         }
 
         .list {
+          color: white;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -175,6 +204,7 @@ export default function howto() {
         }
 
         .list h2 {
+          color: white;
           margin-bottom: -10px;
         }
 
@@ -187,27 +217,39 @@ export default function howto() {
         }
 
         .underline {
+          color: white;
           text-decoration: underline;
           cursor: pointer;
         }
 
+        code {
+          background: #160f27;
+          border-radius: 5px;
+          padding: 0.75rem;
+          font-size: 0.8rem;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        }
+
+        code:hover {
+          cursor: pointer;
+        }
+
         a {
-          color: inherit;
+          color: white;
           text-decoration: none;
         }
 
         .title a {
-          color: #0070f3;
+          color: white;
           text-decoration: none;
         }
 
         .title {
+          color: white;
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
-        }
-
-        .title {
           text-align: center;
         }
 
@@ -219,24 +261,27 @@ export default function howto() {
             align-items: center;
           }
           .list {
+            color: white;
             width: 100%;
             padding: 10px;
           }
           .list h2 {
+            color: white;
             font-size: 1.4rem;
           }
 
           .title {
+            color: white;
             margin: 0;
             line-height: 1.15;
             font-size: 3rem;
           }
 
           code {
-            background: #5b5b5b;
+            background: #160f27;
             border-radius: 5px;
             padding: 0.75rem;
-            font-size: 1.1rem;
+            font-size: 0.8rem;
             font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
               DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
           }
